@@ -39,14 +39,11 @@ It holds the method, the rules and where things stand. Each topic's own detailed
 ## Topics
 | Topic | Area | Status | Roadmap |
 |---|---|---|---|
-| *(none yet)* | | | |
-
-### Notes for planned topics
-- **CSAPP (3rd ed.)**: my copy is the Global Edition. Read the text, but skip its practice/homework problems (the authors say they have many errors). Use section numbers, not pages. Official self-study labs: <https://csapp.cs.cmu.edu/3e/labs.html>. Order: 1 → 2 → 3 → 6 → 5 → project (CV/ML + systems speed-up) → 7 → 8 → 9 → 10 → 11 → 12, Ch4 later. Estimate 7–9 months. Ch2 splits into 15 points (2-01 … 2-15) following §2.1–2.4.
+| CSAPP (3rd ed.) | book | active | `docs/books/csapp/index.md` |
 
 ## Now
-- 2026-11-18: shell repo set up.
-- **Next:** pick the first topic, then create its roadmap page from template A.
+- 2026-11-18: shell repo set up; CSAPP started (roadmap + chapter 2 point map).
+- **Next:** csapp-2-01 Hex notation and data sizes (§2.1.1–2.1.2).
 
 ## How a session ends
 Update the topic's "Now" and log line, then the "Now" section above. Commit.

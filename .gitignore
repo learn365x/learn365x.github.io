@@ -3,3 +3,5 @@ __pycache__/
 *.o
 a.out
 .venv/
+# optional private notes, never published
+.local/

@@ -7,7 +7,7 @@ Each topic has its own folder, and its `index.md` is that topic's roadmap.
 
 | Area | Topic | Started | Status |
 |---|---|---|---|
-| | *(no topics yet)* | | |
+| Books | [CSAPP: Computer Systems: A Programmer's Perspective](books/csapp/index.md) | 2026-11-18 | active |
 
 Status: `planned` → `active` → `paused` / `done`.
 

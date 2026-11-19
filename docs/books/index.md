@@ -2,4 +2,4 @@
 
 | Topic | Status |
 |---|---|
-| *(none yet)* | |
+| [CSAPP: Computer Systems: A Programmer's Perspective (3rd ed.)](csapp/index.md) | active |

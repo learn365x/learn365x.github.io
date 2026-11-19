@@ -41,7 +41,11 @@ extra_javascript:
 # Add each new topic under its area as it starts.
 nav:
   - Home: index.md
-  - Books: books/index.md
+  - Books:
+      - books/index.md
+      - CSAPP:
+          - books/csapp/index.md
+          - Ch2 Representing information: books/csapp/ch02/index.md
   - Papers: papers/index.md
   - Courses: courses/index.md
   - Domains & tags: domains/index.md
