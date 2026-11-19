@@ -9,13 +9,19 @@ Learning from first principles, one point at a time. Each learning line is one m
 - **Time:** 60–90 min every day, first thing. 20-minute minimum on bad days. 30-minute review every week.
 
 ## Learning lines
-Each line has one folder, `docs/<line>/`, and its `index.md` is that line's roadmap. Categories are [tags](tags.md), not folders.
+Books and courses are learning lines. Each line has one folder, `docs/<line>/`, and its `index.md` is that line's roadmap. Categories are [tags](tags.md), not folders.
 
 | Line | Tags | Started | Status |
 |---|---|---|---|
 | [CSAPP: Computer Systems: A Programmer's Perspective](csapp/index.md) (+ CMU 15-213) | systems, programming, architecture | 2026-11-18 | active |
 
 Status: `planned` → `active` → `paused` / `done`.
+
+**Papers** are not lines: each is one page in [Papers](papers/index.md), whatever its field.
+
+| Collection | Tags | Started | Status |
+|---|---|---|---|
+| [Papers](papers/index.md) (1 paper) | cv, deep-learning | 2026-03-18 | active |
 
 ## Now
 - 2026-11-18: site set up; CSAPP started (roadmap + chapter 2 point map).
@@ -27,6 +33,7 @@ docs/index.md                       ← this page: all lines, flow, rules
 docs/<line>/index.md                ← a line's roadmap (sources, plan, Now, log)
 docs/<line>/chNN/index.md           ← a unit's point map
 docs/<line>/chNN/<id>-<name>.md     ← one point, e.g. csapp/ch02/csapp-2-01-hex.md
+docs/papers/<year>-<name>.md        ← one paper, e.g. papers/2012-alexnet.md
 docs/tags.md                        ← tag index (generated)
 docs/timeline.md                    ← when each idea appeared
 docs/template.md                    ← page formats

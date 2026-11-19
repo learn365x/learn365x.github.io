@@ -6,6 +6,7 @@ Learning from first principles, one point at a time. Site: <https://learn365x.gi
 - `docs/index.md`: overview of all learning lines, the per-point flow and the rules
 - `docs/<line>/index.md`: each learning line's roadmap (sources, plan, Now, log)
 - `docs/<line>/chNN/`: one folder per unit, with a point map and the point pages
+- `docs/papers/`: one page per paper, `<year>-<name>.md`
 - `docs/tags.md`: categories, as tags
 - `docs/template.md`: page formats
 - `labs/`: my own small labs

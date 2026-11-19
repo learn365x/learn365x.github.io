@@ -1,13 +1,19 @@
 # How pages work
 
-Everything is organised by **learning line**: one main work plus its companions, e.g. a book and the course that follows it (CSAPP + CMU 15-213). Each line has one flat folder under `docs/`. Categories (systems, CV, LLMs, ...) are **tags**, not folders; see [Tags](tags.md).
+**Books and courses are learning lines:** one main work plus its companions, e.g. a book and the course that follows it (CSAPP + CMU 15-213). Each line has a roadmap and one flat folder under `docs/`.
 
-There are three kinds of page: a **line roadmap** (one per line), a **unit point map** (one per unit) and a **point** (many per unit).
+**Papers are single pages in `docs/papers/`**, named `<year>-<short-name>.md` (e.g. `2012-alexnet.md`), whatever their field. A paper is short and self-contained, so it gets no roadmap and no folder. If a paper ever grows into a months-long study, turn it into its own line.
+
+ Categories (systems, CV, LLMs, ...) are **tags**, not folders; see [Tags](tags.md).
+
+There are four kinds of page: a **line roadmap** (one per line), a **unit point map** (one per unit), a **point** (many per unit) and a **paper page** (one per paper).
 
 ```
 docs/<line>/index.md                ← line roadmap
 docs/<line>/chNN/index.md           ← unit point map
 docs/<line>/chNN/<id>-<name>.md     ← points
+docs/papers/index.md                ← table of papers + reading orders
+docs/papers/<year>-<name>.md        ← one paper
 ```
 
 **Units follow the main source's structure:** chapters for a book (`ch02/`), sections for a paper, lectures or modules for a course. Example: `docs/csapp/index.md`, `docs/csapp/ch02/index.md` and `docs/csapp/ch02/csapp-2-01-hex.md`.
@@ -100,6 +106,48 @@ Answer first, without reading. No answers are written in advance: I send mine to
 | | | | code / analogy |
 
 ## 6. Mistakes log
+- yyyy-mm-dd: I thought ___, actually ___.
+````
+
+## C. Paper page
+The point format, inside one page: each key design choice is a short section. Add a row to `docs/papers/index.md` when starting a paper.
+
+````markdown
+---
+title: "<Paper title>"
+id: <short-name>
+source: "<authors, venue, year>"
+year: <year>
+status: planned            # planned | reading | done
+learned:
+tags:
+  - domain/<domain>        # e.g. domain/cv, domain/llm, domain/systems (several are fine)
+---
+
+# <Short name> (<year>)
+
+**Paper:** <full citation, link>
+
+**Why I'm reading it:** <one sentence>
+
+**Code:** <link, if any>
+
+## Key points
+
+### <Design choice 1>
+*Paper §x.y*
+
+**Questions**
+
+1. ...
+
+**Check** (prediction, then run)
+
+**Summary** (my own words)
+
+**Big picture**
+
+## Mistakes log
 - yyyy-mm-dd: I thought ___, actually ___.
 ````
 
