@@ -1,0 +1,49 @@
+site_name: learn365x
+site_url: https://learn365x.github.io/
+site_description: Learning from first principles, one point at a time.
+repo_url: https://github.com/learn365x/learn365x.github.io
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.indexes
+    - navigation.top
+    - search.highlight
+    - content.code.copy
+  palette:
+    - scheme: default
+      toggle: {icon: material/brightness-7, name: Dark mode}
+    - scheme: slate
+      toggle: {icon: material/brightness-4, name: Light mode}
+
+plugins:
+  - search
+  - tags          # domain + layer tags from each page's front matter
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - pymdownx.details        # collapsible ??? answer blocks
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+# Add each new topic under its area as it starts.
+nav:
+  - Home: index.md
+  - Books: books/index.md
+  - Papers: papers/index.md
+  - Courses: courses/index.md
+  - Domains & tags: domains/index.md
+  - Timeline: timeline.md
+  - How pages work: template.md
