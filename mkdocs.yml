@@ -26,7 +26,7 @@ markdown_extensions:
   - attr_list
   - md_in_html
   - tables
-  - pymdownx.details        # collapsible ??? answer blocks
+  - pymdownx.details        # collapsible ??? blocks
   - pymdownx.superfences
   - pymdownx.highlight
   - pymdownx.inlinehilite
@@ -38,16 +38,15 @@ markdown_extensions:
 extra_javascript:
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
-# Add each new topic under its area as it starts.
+# Add each new learning line as it starts; categories are tags, not nav sections.
 nav:
   - Home: index.md
-  - Books:
-      - books/index.md
-      - CSAPP:
-          - books/csapp/index.md
-          - Ch2 Representing information: books/csapp/ch02/index.md
-  - Papers: papers/index.md
-  - Courses: courses/index.md
-  - Domains & tags: domains/index.md
+  - CSAPP:
+      - csapp/index.md
+      - Ch2 Representing information:
+          - csapp/ch02/index.md
+          - Placement quiz: csapp/ch02/placement.md
+          - 2-01 Hex and data sizes: csapp/ch02/csapp-2-01-hex.md
+  - Tags: tags.md
   - Timeline: timeline.md
   - How pages work: template.md

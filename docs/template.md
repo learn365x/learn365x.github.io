@@ -1,40 +1,45 @@
 # How pages work
 
-There are two kinds of page: a **topic roadmap** (one per topic) and a **point** (many per topic).
+Everything is organised by **learning line**: one main work plus its companions, e.g. a book and the course that follows it (CSAPP + CMU 15-213). Each line has one flat folder under `docs/`. Categories (systems, CV, LLMs, ...) are **tags**, not folders; see [Tags](tags.md).
+
+There are three kinds of page: a **line roadmap** (one per line), a **unit point map** (one per unit) and a **point** (many per unit).
 
 ```
-docs/<area>/<topic>/index.md        ← topic roadmap
-docs/<area>/<topic>/<point-id>.md   ← points
+docs/<line>/index.md                ← line roadmap
+docs/<line>/chNN/index.md           ← unit point map
+docs/<line>/chNN/<id>-<name>.md     ← points
 ```
 
-Areas are `books/`, `papers/` and `courses/`. Example: `docs/books/csapp/index.md` and `docs/books/csapp/2-01-hex.md`.
+**Units follow the main source's structure:** chapters for a book (`ch02/`), sections for a paper, lectures or modules for a course. Example: `docs/csapp/index.md`, `docs/csapp/ch02/index.md` and `docs/csapp/ch02/csapp-2-01-hex.md`.
 
-**Starting a new topic:** create its folder and `index.md` from template A, add a row to the home page table, and add it to `nav` in `mkdocs.yml`.
+**Starting a new line:** create its folder and `index.md` from template A, add a row to the home page table, and add it to `nav` in `mkdocs.yml`. Create a unit folder only when you reach that unit.
 
-## A. Topic roadmap
+## A. Line roadmap
 
 ````markdown
 ---
-title: "<Topic name>"
-topic: <short-id>          # used as the prefix of point IDs
-area: book                 # book | paper | course
-source: "<authors, edition / venue, year>"
+title: "<Line name>"
+line: <short-id>           # folder name and prefix of point IDs
+source: "<main work: authors, edition / venue, year>"
+companions: []             # e.g. ["CMU 15-213"]
 status: planned            # planned | active | paused | done
 started:
+tags:
+  - domain/<domain>        # e.g. domain/systems, domain/cv, domain/llm
 ---
 
-# <Topic name>
+# <Line name>
 
 **Why I'm learning this:** <one or two sentences>
 
-**Materials:** <book edition, paper link, course site, labs>
+**Materials:** <main work (edition, link), companion sources, labs>
 
-**Plan:** <order, time estimate, how labs/projects fit in>
+**Plan:** <units in order, time estimate, how labs/projects fit in>
 
-## Points
-| ID | Point | Source section | Needs | Status |
+## Units
+| # | Unit | Lab | Est. | Status |
 |---|---|---|---|---|
-| <id>-01 | | | – | |
+| 1 | [<unit>](ch01/index.md) | | | |
 
 ## Labs / projects
 - [ ] ...
@@ -51,7 +56,7 @@ started:
 ````markdown
 ---
 title: "<a claim, not a topic>"
-id: <topic>-01
+id: <line>-<unit>-01
 type: concept            # concept | paper | technique | tool
 source: "<book §x.y / paper §z>"
 year:                    # when the idea appeared (history of the field)
@@ -60,19 +65,16 @@ status: seen             # seen | can answer | can apply
 needs: []
 unlocks: []
 tags:
-  - domain/cs-systems    # e.g. domain/cv, domain/llm-infra, domain/signal, domain/comm
+  - domain/systems       # e.g. domain/cv, domain/llm-infra, domain/signal, domain/comm
   - layer/bits           # bits | hardware | os | compiler | framework | model
 ---
 
 # <title>
 
 ## 1. Questions
-Answer first, without reading.
+Answer first, without reading. No answers are written in advance: I send mine to Claude, who checks them by running code. What I got wrong goes in the mistakes log.
 
 1. <question>
-
-    ??? answer
-        <answer + why>
 
 ## 2. If stuck, read
 - <exact section>. Then re-answer the questions above.
@@ -108,5 +110,5 @@ Answer first, without reading.
 - **2–4 links per point**, only where the link is real.
 - **One hop only:** link from this point to another field, never from that field on to a third.
 - **Each link gets one check question I can answer in about 5 minutes** from this point plus what I already know. If answering it needs a concept I haven't learned, the link is too deep.
-- **Too deep? Don't follow it now.** Write it in a "later" list. It can become its own point when that topic is active.
+- **Too deep? Don't follow it now.** Write it in a "later" list. It can become its own point when that line is active.
 - **Mark each link** `code` (I checked it by running something) or `analogy` (understood, not verified).

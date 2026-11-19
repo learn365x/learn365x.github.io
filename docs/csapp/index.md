@@ -1,10 +1,14 @@
 ---
 title: "CSAPP: Computer Systems: A Programmer's Perspective"
-topic: csapp
-area: book
+line: csapp
 source: "Bryant & O'Hallaron, 3rd ed. (Global Edition), 2016"
+companions: ["CMU 15-213"]
 status: active
 started: 2026-11-18
+tags:
+  - domain/systems
+  - domain/programming
+  - domain/architecture
 ---
 
 # CSAPP: Computer Systems: A Programmer's Perspective
@@ -14,7 +18,7 @@ started: 2026-11-18
 ## Materials
 - **Book:** 3rd edition, Global Edition. Read the chapter text from it, but **skip its practice and homework problems**: the authors say that edition's problem set has many errors. Questions on this site are written separately and checked by running code. Sections are referenced by number (e.g. §2.1.3), not by page.
 - **Book site** (errata, self-study lab handouts): <https://csapp.cs.cmu.edu/3e/>
-- **CMU 15-213** (slides, schedule), as a second explanation: <https://www.cs.cmu.edu/~213/>
+- **Companion source: CMU 15-213** (Introduction to Computer Systems, the course built on this book): slides, lectures and schedule, as a second explanation. The plan follows its order. <https://www.cs.cmu.edu/~213/>
 - **Machine for labs:** the remote Linux server (x86-64).
 - **Lab solutions** go in a private repo, not here.
 
@@ -39,7 +43,7 @@ Order follows CMU 15-213. Chapter 4 is skipped on the first pass. Estimate: 7–
 
 Chapter status: blank → `next` → `in progress` → `done` (all points at least `can answer`, lab passed).
 
-## How this topic works
+## How this line works
 - Each chapter gets a folder (`ch02/`, `ch03/`, …) when I reach it, with a point map in its `index.md`.
 - One point ≈ one session. Point pages are `chNN/<id>-<short-name>.md`, IDs like `csapp-2-01`.
 - A chapter's official lab comes after the points it needs. The point map says where.

@@ -4,9 +4,11 @@
 
 **Lab:** datalab. Integer puzzles after 2-11, float puzzles after 2-15.
 
+**Start here:** take the [placement quiz](placement.md) to mark the points I already know.
+
 | ID | Point | Sections | Needs | Status |
 |---|---|---|---|---|
-| csapp-2-01 | Hex notation and data sizes | §2.1.1–2.1.2 | – | next |
+| [csapp-2-01](csapp-2-01-hex.md) | Hex notation and data sizes | §2.1.1–2.1.2 | – | next |
 | csapp-2-02 | Addressing and byte order (endianness) | §2.1.3–2.1.5 | 2-01 | |
 | csapp-2-03 | Boolean algebra, bit-level ops and masks | §2.1.6–2.1.7 | 2-01 | |
 | csapp-2-04 | Logical ops vs bit ops; shifts | §2.1.8–2.1.9 | 2-03 | |
