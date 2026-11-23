@@ -47,6 +47,7 @@ nav:
           - csapp/ch02/index.md
           - Placement quiz: csapp/ch02/placement.md
           - 2-01 Hex and data sizes: csapp/ch02/csapp-2-01-hex.md
+          - "Notes: 0x and byte order": csapp/ch02/notes-hex-endianness.md
   - Papers:
       - papers/index.md
       - 2012 AlexNet: papers/2012-alexnet.md

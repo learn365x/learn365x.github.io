@@ -6,6 +6,8 @@
 
 **Start here:** take the [placement quiz](placement.md) to mark the points I already know.
 
+**Notes:** [`0x` and byte order](notes-hex-endianness.md).
+
 | ID | Point | Sections | Needs | Status |
 |---|---|---|---|---|
 | [csapp-2-01](csapp-2-01-hex.md) | Hex notation and data sizes | §2.1.1–2.1.2 | – | next |
